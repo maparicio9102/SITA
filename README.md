@@ -17,11 +17,11 @@ Actualmente el profesor manda un layourt con la información al correo o número
 	* Rol Profesor
 	* Rol Administrador
 
-# Funcionalidades:
+## Funcionalidades:
 	* Carga de Excel
 	* Mostrar concentrado
 	* descargar reporte de concentrado
-# Entorno:
+## Entorno:
 	* Base de Datos: MySQL
 	* Java Script Angular
 	* CSS y HTML5
