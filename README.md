@@ -23,7 +23,10 @@ Actualmente el profesor manda un layourt con la información al correo o número
 	* Mostrar concentrado
 	* descargar reporte de concentrado
 ## Entorno:
-	* Base de Datos: MySQL
-	* Java Script Angular
-	* CSS y HTML5
+
+	* Base de Datos: MySQL 8.0
+	* Java Script 
+	* Laravel
+	* PHP
+	* CSS3 y HTML5
 
