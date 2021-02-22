@@ -29,14 +29,13 @@ El personal administrativo nos comento que el Tutor o docente manda un archivo e
 	* Descargar reporte de concentrado: Este concentrado ayudará en gran medida para que de manera rapida el personal administrativo tenga de manera pronta y rapida todo la información mensual de las tutorias y asesorias, haciendo mas efectiva y rápida la carga al respectivo sistema.
 	
 	
-## Entorno:
-	 
-	* Base de Datos: MySQL 8.0
-	* Java Script 
-	* Laravel
-	* PHP
-	* CSS3 y HTML5
+## Entorno
 
+Base de Datos: MySQL 8.0.22 
+Java Script
+Laravel Framework  8.26.1
+PHP
+CSS3 y HTML5
 
 
 ##  Propuesta de diseño de B.D. Diagrama Relacional
