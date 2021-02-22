@@ -30,12 +30,11 @@ El personal administrativo nos comento que el Tutor o docente manda un archivo e
 	
 	
 ## Entorno
-
-Base de Datos: MySQL 8.0.22 
-Java Script	
-Laravel Framework  8.26.1
-PHP
-CSS3 y HTML5
+*  Base de Datos: MySQL 8.0.22
+*  Java Script
+*  Laravel Framework 8.26.1
+*  PHP
+*  CSS3 Y HTML5
 
 
 ##  Propuesta de diseño de B.D. Diagrama Relacional
