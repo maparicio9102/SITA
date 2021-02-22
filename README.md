@@ -39,44 +39,4 @@ El personal administrativo nos comento que el Tutor o docente manda un archivo e
 
 ##  Propuesta de diseño de B.D. Diagrama Relacional
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![SITA ER](https://user-images.githubusercontent.com/74787664/108663311-e3755a00-7495-11eb-8091-996b8413d86b.png)
