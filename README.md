@@ -6,6 +6,7 @@ Sistema de Tutorías y Asesorías
 - Adriana Cázares Bobadilla
 - Oscar Aranda Salas
 - Miguel Aparicio Herrera
+- Claudia Iveth Valdez Lira
 
 
  
