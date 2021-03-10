@@ -33,21 +33,23 @@
     <!-- partial -->
 
     <div class="main-wrapper mdc-drawer-app-content">      
-      <header class="mdc-top-app-bar">      
+      <header class="mdc-top-app-bar" style="position: -webkit-sticky; position: sticky; top: 0;">
+      <!-- mdc-top-app-bar -->
             @include('menu.header')
       </header>
-      <!-- partial -->
+      <!-- partial -->     
 
-      <div class="page-wrapper mdc-toolbar-fixed-adjust">
+      <div class="">
+      <!-- page-wrapper mdc-toolbar-fixed-adjust -->
         <main class="content-wrapper">
             <div class="mdc-layout-grid">
-                <div class="mdc-layout-grid__inner">
-              @yield('contenido') 
+                <div class="mdc-layout-grid__inner">                
+                    @yield('contenido') 
                 </div>
             </div>
         </main>
         
-        <footer>
+        <footer >
               @include('footer.footer')
         </footer>
         <!-- partial -->

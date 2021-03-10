@@ -1,4 +1,4 @@
-<div class="mdc-top-app-bar__row">
+<div class="mdc-top-app-bar__row" >
           <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
             <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button sidebar-toggler">menu</button>
             <span class="mdc-top-app-bar__title">Bienvenido</span>
@@ -67,6 +67,7 @@
 
             </div>
             <div class="divider d-none d-md-block"></div>
+            
             
           </div>
         </div>

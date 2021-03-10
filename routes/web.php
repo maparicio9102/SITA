@@ -21,13 +21,13 @@ Route::get('/', function () {
 });
 
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard',  [masterController::class, 'Home'])->name('master');
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard',  [masterController::class, 'Home'])->name('inicio');
 Route::middleware(['auth:sanctum', 'verified'])->get('/tutoria',  [cargaController::class, 'carga'])->name('tutoria');
 Route::middleware(['auth:sanctum', 'verified'])->get('/asesoria',  [cargaController::class, 'carga'])->name('asesoria');
 
 
-
+/* 
 Route::middleware(['auth:sanctum', 'verified'])->get('/master', function () {
     return view('dashboard');
 })->name('dashboard');
- 
+  */
