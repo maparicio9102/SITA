@@ -15,6 +15,7 @@
 
   <LInk href="{{asset('/assets/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
   <script src="{{url('assets/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{url('js/funcionesGenerales.js')}}"></script>
  
 </head>
 <body>
@@ -39,7 +40,7 @@
       </header>
       <!-- partial -->     
 
-      <div class="">
+      <div class="page-wrapper mdc-toolbar-fixed-adjust">
       <!-- page-wrapper mdc-toolbar-fixed-adjust -->
         <main class="content-wrapper">
             <div class="mdc-layout-grid">
