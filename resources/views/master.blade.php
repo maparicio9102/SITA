@@ -48,8 +48,7 @@
                     @yield('contenido') 
                 </div>
             </div>
-        </main>
-        
+        </main>        
         <footer >
               @include('footer.footer')
         </footer>
@@ -57,8 +56,31 @@
       </div>
     </div>
   </div>
-  <!-- plugins:js -->
   
+
+  <div id="div_modal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 id="h5_title" class="modal-title">Modal title</h5>
+        <button type="button" onclick="$('#div_modal').hide();" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="div_modBody" class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="btn_modAcep"  class="btn btn-success btn-sm opera" >Aceptar</button>
+        <button type="button" id="btn_modCancel" onclick="$('#div_modal').hide();"  class="btn btn-danger btn-sm opera" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- plugins:js -->  
+
+
   <script src="{{ url('assets/vendors/js/vendor.bundle.base.js')}}"></script>
   <script src="{{ url('assets/js/material.js')}}"></script>
   <script src="{{ url('assets/js/misc.js')}}"></script>

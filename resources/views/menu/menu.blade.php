@@ -33,7 +33,7 @@
               </div>
             </div>
 
-
+            
             <div class="mdc-list-item mdc-drawer-item">
               <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="sample-page-submenu">
                 <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">description</i>
@@ -43,16 +43,15 @@
               <div class="mdc-expansion-panel" id="sample-page-submenu">
                 <nav class="mdc-list mdc-drawer-submenu">
                   <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="#">
-                      Tutorias
+                    <a class="mdc-drawer-link" href="{{route('reptutoria')}}">
+                      Rep - Tutorias
                     </a>
                   </div>
                    <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="#">
-                      Asesorias
+                    <a class="mdc-drawer-link" href="{{route('repasesoria')}}">
+                    Rep - Asesorias
                     </a>
-                  </div>
-                   
+                  </div>                   
                   
                 </nav>
               </div>

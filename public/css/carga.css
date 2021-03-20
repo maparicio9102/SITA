@@ -1,7 +1,23 @@
-  div.div_btnExt{   
+
+
+
+div.div_btnExt{   
     text-align: right;   
 } 
 button.opera{
 width:  80px;
 
 } 
+
+
+body{
+  background-image:url("http://oi59.tinypic.com/bgafkz.jpg");
+  background-size:100%;
+  background-repeat:no-repeat;
+}
+
+.modal{
+  width:100%;
+  height:100%;  
+  background-color:rgba(0,0,0,.6)
+}

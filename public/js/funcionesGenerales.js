@@ -3,8 +3,7 @@ function msjAlerta(msj){
             $('#div_msjg').show();
             $("#div_msjg").fadeTo(2000, 500).slideUp(500, function() {
                 $("#div_msjg").slideUp(500);
-            });
-    
+            });   
 
    }
 
@@ -17,3 +16,13 @@ function soloNumeros(e){
     e.preventDefault();
   }
 }
+
+
+function muestarModal(){
+  $("#div_modal").show();
+}
+
+function ocultaModal(){
+  $("#div_modal").hide();
+}
+
