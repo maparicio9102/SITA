@@ -27,6 +27,7 @@ function btn_Elimina(){
                
             },
             success: function (response) {
+
                 if(response.length!=0){
                     document.getElementById("btn_seOK").innerHTML = "Elimina";
                     llenaSesiones();
@@ -66,6 +67,7 @@ function EliminaRegistros(){
     let usuarioId = $("[id$=hid_IdUser]").val(); 
     let fechaCarga = document.getElementById("txt_fecha").value;    
     let arrSesions =  $('[id$=hid_idsDell]')[0].value.split(",");
+    let mensajeBaja = 0;
     for (var i = 0; i < arrSesions.length -1 ; i++) {
         console.log(arrSesions[i]);
 
@@ -82,13 +84,15 @@ function EliminaRegistros(){
                      
                 },
                 beforeSend: function () {
-                    
+                    mensajeBaja +=1;
                 },
                 complete: function () {
-                
+                   
                 },
-                success: function (response) {                
-                    mensajeEliminar();
+                success: function (response) {
+                    mensajeBaja +=1;
+                    console.log(mensajeBaja )
+                    
                 },
                 error: function (jqXHR, xhr) {
                     //console.log('boo!');
@@ -97,7 +101,12 @@ function EliminaRegistros(){
             });
         }
 
+        
+        if (mensajeBaja > 0){
+            mensajeEliminar();
+        }
 
+        
 
 }
 

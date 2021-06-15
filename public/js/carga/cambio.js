@@ -70,7 +70,7 @@ function ActualizaRegistros(){
                     'fechaCarga': fechaCarga.replace("-","")                    
                 },
                 beforeSend: function () {
-                    
+                    mensaje +=1;
                 },
                 complete: function () {
                 
@@ -131,7 +131,7 @@ function ActualizaRegistros(){
                                     'fechaCarga': fechaCarga.replace("-","") 
                                 },
                                 beforeSend: function () {
-                                    
+                                    mensaje +=1;
                                     
                                 },
                                 complete: function () {

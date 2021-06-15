@@ -33,7 +33,7 @@ function btn_Reporte(){
             txt_fecha.focus();
         }
         else{
-            alert(tipoSesion + " "+ txt_fecha.value.replace("-","") )
+            
 
             $.ajax({
                 headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') },

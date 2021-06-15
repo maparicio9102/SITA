@@ -41,7 +41,7 @@ function validaCampos(){
 function limpiaDatos() {
     document.getElementById("txt_fecha").value  = "";
     document.getElementById("ddl_programE").value = -1;
-    document.getElementById("txt_noTuto").value = "";
+    document.getElementById("txt_noTuto").value = "0";
     document.getElementById("ddl_cuatri").value = -1;
     document.getElementById("txt_NoHom").value = "";
     document.getElementById("ddl_grupo").value = -1;

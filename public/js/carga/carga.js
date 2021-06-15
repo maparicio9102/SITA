@@ -170,6 +170,7 @@ function OcultaOpera(op){
         let usuarioId = $("[id$=hid_IdUser]").val(); 
         let fechaCarga = document.getElementById("txt_fecha").value;
         let tipoSesion = $('input:radio[name=rdb_tipoAsesoria]:checked').val();
+        let mensajeAlta = 0;
 
         $('[id$=tbody_datos] tr').each(function () {
             
@@ -200,7 +201,7 @@ function OcultaOpera(op){
                                 url: "registra", //'{{ route("registra") }}',
                                 data: {
                                     '_token': $('input[name=_token]').val(),
-                                    'usuarioId' : usuarioId  ,                         
+                                    'usuarioId' : '', // usuarioId,
                                     'tipoSesion':  tipoSesion,
                                     'hiidde_programE': hiidde_programE,
                                     'hiidde_cuatri':  hiidde_cuatri,
@@ -212,36 +213,51 @@ function OcultaOpera(op){
                                     'td_NoAsist': td_NoAsist_,
                                     'fechaCarga': fechaCarga.replace("-","") 
                                 },
-                                beforeSend: function () {
-                                    
-                                    
+                                beforeSend: function () {                                   
+                                 
                                 },
-                                complete: function () {
-                                  
-                                    
+                                complete: function () {                                  
+                                   
                                 },
                                 success: function (response) {
-                                    mensajesGuardar();
+                                    mensajeAlta = response;                                 
+                                    console.log(response);
+                                    mensajesAltanum(response);
+                                   
+
                                 },
-                                error: function (jqXHR, xhr) {
-                                    console.log('boo!');
-                                    console.log(xhr.responseText);
+                                error: function (response, jqXHR, xhr) {
+                                    mensajeAlta = response;
+                                    mensajesAltanum(response);
+
+                                    console.log(response);
+
+                                   
+                                  
                                 }
                             });
                 }                      
             });  
-                    
+              
+           
+    }
+
+    function mensajesAltanum(obj1){         
+        if(obj1 > 0){
+            mensajesGuardar("Se guardaron correctamente los registros", "Confimación");
+        }
+        else{
+            mensajesGuardar("Error! Hay un problema para guardar el registro.", "Alerta");
+        }
 
     }
 
-    
-
 /****************************************************************/   
-function mensajesGuardar(){
+function mensajesGuardar(msj, titulo){
     ocultaModal()
     
-    $('[id$=h5_title]')[0].innerHTML = "Confimación"
-    $('[id$=div_modBody]')[0].innerHTML = "Se guardaron correctamente los registros"
+    $('[id$=h5_title]')[0].innerHTML = titulo;
+    $('[id$=div_modBody]')[0].innerHTML = msj ;
     var boton = document.getElementById("btn_modAcep");
     var botonCanel = document.getElementById("btn_modCancel");
     botonCanel.style.display = "none";
