@@ -1,6 +1,6 @@
 
 
-/* === Import template variables === */
+/* Variables CSS */
 .mdc-button {
   font-family: Roboto, sans-serif;
   -moz-osx-font-smoothing: grayscale;
@@ -53,6 +53,9 @@
 .mdc-button.mdc-button--dense {
   border-radius: 4px;
 }
+
+
+
 
 .mdc-button:not(:disabled) {
   background-color: transparent;
