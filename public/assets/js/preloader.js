@@ -5,3 +5,6 @@ document.body.insertBefore(pre, document.body.firstChild);
 document.addEventListener("DOMContentLoaded", function(event) {
     document.body.className += " loaded"
 }); 
+
+
+/* comentarios */
